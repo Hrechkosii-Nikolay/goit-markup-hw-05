@@ -231,6 +231,8 @@ img {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color 250ms var(--main-transition);
 }
 .contacts-icon {
   vertical-align: middle;
@@ -479,7 +481,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms var(--main-transition), background-color 250ms var(--main-transition);
+  transition: background-color 250ms var(--main-transition);
 }
 
 .out-team-icon-link:is(:hover, :focus) .social-icon {
@@ -494,6 +496,7 @@ img {
 
 .social-icon {
   fill: var(--icon-color);
+  transition: fill 250ms var(--main-transition);
 }
 /**
   |==================================
@@ -521,11 +524,12 @@ img {
   align-items: center;
   flex-basis: calc((100% - 150px) / 6);
 
-  transition: border 250ms var(--main-transition), fill 250ms var(--main-transition);
+  transition: border 250ms var(--main-transition);
 }
 
 .our-client-logo {
   fill: var(--icon-color);
+  transition: fill 250ms var(--main-transition);
 }
 
 .our-client-link:is(:hover, :focus) {
@@ -652,7 +656,8 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
 
-  transition: background-color 250ms var(--main-transition), color 250ms var(--main-transition);
+  transition: background-color 250ms var(--main-transition), color 250ms var(--main-transition),
+    box-shadow 250ms var(--main-transition);
 }
 
 .filter-bnt:is(:hover, :focus),
